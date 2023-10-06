@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/textures/bird.png" type="Texture" id=1]
 [ext_resource path="res://characters/player/Player.gd" type="Script" id=2]
+[ext_resource path="res://assets/audio/wing.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/audio/hit.wav" type="AudioStream" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 20.0998
@@ -95,3 +97,9 @@ autoplay = "idle"
 anims/RESET = SubResource( 2 )
 anims/flap = SubResource( 3 )
 anims/idle = SubResource( 4 )
+
+[node name="Hit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="Wing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )

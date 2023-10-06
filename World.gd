@@ -12,7 +12,7 @@ var highscore=0
 
 func _ready():
 	obstacle_spawner.connect("obstacle_created",self,"_on_obstacle_created")
-#	new_game()
+	load_highscore()
 
 func new_game():
 	self.score=0
@@ -43,8 +43,9 @@ func game_over():
 	
 	if score>highscore:
 		highscore=score
+		save_highscore()
 	
-	menu_layer.init_game_over_menu(score)
+	menu_layer.init_game_over_menu(score,highscore)
 
 func _on_MenuLayer_start_game():
 	new_game()
