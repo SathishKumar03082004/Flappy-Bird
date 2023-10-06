@@ -9,7 +9,6 @@ onready var animator=$AnimationPlayer
 var started=false
 
 func _physics_process(delta):
-	print(rotation_degrees)
 	if Input.is_action_just_pressed("flap"):
 		if !started:
 			start()
