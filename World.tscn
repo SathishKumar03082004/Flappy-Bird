@@ -14,8 +14,8 @@ centered = false
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 115, 427 )
 
-[node name="Ground" parent="." instance=ExtResource( 3 )]
-position = Vector2( 0, 686 )
-
 [node name="Obstacle" parent="." instance=ExtResource( 4 )]
 position = Vector2( 381, 427 )
+
+[node name="Ground" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, 686 )
