@@ -17,13 +17,14 @@ func _physics_process(delta):
 	
 	if rotation_degrees<=MAX_ROTATION_DEGREES:
 		angular_velocity=0
+		rotation_degrees = MAX_ROTATION_DEGREES
 
 func start():
 	if started:return
 	started=true
-#	gravity_scale =5.0
+	gravity_scale =5.0
 	animator.play("flap")
 
 func flap():
-#	linear_velocity.y=FLAP_FORCE
+	linear_velocity.y=FLAP_FORCE
 	angular_velocity=-8.0
