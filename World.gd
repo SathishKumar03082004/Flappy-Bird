@@ -8,7 +8,7 @@ var score=0 setget set_score
 
 func _ready():
 	obstacle_spawner.connect("obstacle_created",self,"_on_obstacle_created")
-	new_game()
+#	new_game()
 
 func new_game():
 	self.score=0
