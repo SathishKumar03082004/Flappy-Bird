@@ -17,6 +17,12 @@ func _physics_process(delta):
 	if rotation_degrees<=MAX_ROTATION_DEGREES:
 		angular_velocity=0
 		rotation_degrees = MAX_ROTATION_DEGREES
+		
+	if linear_velocity.y>0:
+		if rotation_degrees<=90:
+			angular_velocity=3
+		else:
+			angular_velocity=0
 
 func start():
 	if started:return
