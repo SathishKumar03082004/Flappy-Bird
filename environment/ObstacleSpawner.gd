@@ -4,9 +4,10 @@ onready var timer=$Timer
 
 var Obstacle=preload("res://environment/Obstacle.tscn")
 
-
 func _on_Timer_timeout():
-	pass # Replace with function body.
+	spawn_obstacle()
 
 func spawn_obstacle():
-	pass
+	var obstacle=Obstacle.instance()
+	add_child(obstacle)
+	obstacle.position.y=randi()
