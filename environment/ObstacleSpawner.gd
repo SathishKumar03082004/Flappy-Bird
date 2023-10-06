@@ -1,5 +1,7 @@
 extends Node2D
 
+signal obstacle_created(obs)
+
 onready var timer=$Timer
 
 var Obstacle=preload("res://environment/Obstacle.tscn")
@@ -15,6 +17,7 @@ func spawn_obstacle():
 	add_child(obstacle)
 	#get The Random Number Between 150-550
 	obstacle.position.y=randi()%400+150
+	emit_signal("obstacle_created",obstacle)
 
 
 func start():
