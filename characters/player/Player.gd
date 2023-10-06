@@ -1,5 +1,7 @@
 extends RigidBody2D
 
+export var FLAP_FORCE=-200
+
 onready var animator=$AnimationPlayer
 
 var started=false
