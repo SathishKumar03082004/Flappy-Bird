@@ -1,5 +1,7 @@
 extends RigidBody2D
 
+onready var animator=$AnimationPlayer
+
 var started=false
 
 func _physics_process(delta):
@@ -10,3 +12,4 @@ func _physics_process(delta):
 func start():
 	if started:return
 	started=true
+	gravity_scale =5.0
