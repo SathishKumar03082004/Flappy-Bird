@@ -34,4 +34,5 @@ func _on_Player_died():
 
 func game_over():
 	obstacle_spawner.stop()
-	ground.get_node("AnimationPlayer")
+	ground.get_node("AnimationPlayer").stop()
+	get_tree().call_group("obstacles","set_physics_process",false)
