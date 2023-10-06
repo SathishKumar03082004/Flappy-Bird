@@ -19,4 +19,4 @@ func start():
 	animator.play("flap")
 
 func flap():
-	pass
+	linear_velocity.y=FLAP_FORCE
