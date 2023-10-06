@@ -30,3 +30,5 @@ margin_left = -215.52
 margin_top = -288.0
 margin_right = 240.0
 margin_bottom = 261.0
+
+[node name="Tween" type="Tween" parent="."]
