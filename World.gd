@@ -5,6 +5,8 @@ onready var obstacle_spawner=$ObstacleSpawner
 onready var ground=$Ground
 onready var menu_layer=$MenuLayer
 
+const SAVE_FILE_PATH="user://savedata.save"
+
 var score=0 setget set_score
 var highscore=0
 
@@ -38,7 +40,24 @@ func game_over():
 	obstacle_spawner.stop()
 	ground.get_node("AnimationPlayer").stop()
 	get_tree().call_group("obstacles","set_physics_process",false)
+	
+	if score>highscore:
+		highscore=score
+	
 	menu_layer.init_game_over_menu(score)
 
 func _on_MenuLayer_start_game():
 	new_game()
+
+func save_highscore():
+	var save_data=File.new()
+	save_data.open(SAVE_FILE_PATH,File.WRITE)
+	save_data.store_var(highscore)
+	save_data.close()
+
+func load_highscore():
+	var save_data=File.new()
+	if save_data.file_exists(SAVE_FILE_PATH):
+		save_data.open(SAVE_FILE_PATH,File.READ)
+		highscore=save_data.get_var()
+		save_data.close()
