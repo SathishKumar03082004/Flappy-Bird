@@ -10,8 +10,8 @@
 texture = ExtResource( 1 )
 centered = false
 
-[node name="Ground" parent="Background" instance=ExtResource( 3 )]
-position = Vector2( 0, 686 )
-
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 115, 427 )
+
+[node name="Ground" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, 686 )
