@@ -22,3 +22,8 @@ func set_score(new_score):
 
 func _on_obstacle_created(obs):
 	obs.connect("score",self,"player_score")
+
+func _on_DeathZone_body_entered(body):
+	if body is Player:
+		if body.has_method("die"):
+			body.die()
