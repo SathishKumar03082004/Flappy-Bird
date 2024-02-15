@@ -12,9 +12,9 @@ Flappy Bird is a simple yet addictive mobile game where players tap to keep a bi
 
 ## Screenshots
 
+![Screenshot 2](/start-menu.png)
 ![Screenshot 1](/play.png)
 ![Screenshot 2](/restart-menu.png)
-![Screenshot 2](/start-menu.png)
 
 
 # Author Sathish Kumar G(SathishKumar03082004)
