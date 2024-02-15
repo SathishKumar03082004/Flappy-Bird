@@ -17,4 +17,4 @@ Flappy Bird is a simple yet addictive mobile game where players tap to keep a bi
 ![Screenshot 2](/restart-menu.png)
 
 
-# Author Sathish Kumar G(SathishKumar03082004)
+# [Sathish Kumar G](https://github.com/SathishKumar03082004)
