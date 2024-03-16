@@ -5,10 +5,15 @@
 Flappy Bird is a simple yet addictive mobile game where players tap to keep a bird flying through obstacles, aiming for a high score amidst challenging gameplay.
 
 
+## Download Game
+- Publiched in itch.io
+- [Download Game](https://sathish-03082004.itch.io/flappy-bird).
+
+
 ## Features
 - Addictive gameplay with increasing difficulty.
 - Retro-style graphics.
-- Single Button Control.
+- Single Touch Control.
 
 ## Screenshots
 
